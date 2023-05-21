@@ -1,0 +1,172 @@
+body{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3{
+    font-family: 'Montez', cursive; 
+    font-size: 30px;
+    color: blue;
+    margin-top: 2px;
+    margin-bottom: -10px;
+}
+p{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.sign{
+    background-color: blue;
+    padding: 10px;
+    border-color: antiquewhite;
+    color: white;
+    border-radius: 2px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.container{
+min-height: 580px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-right: 40px;
+}
+.post-but{
+    background-color: rgb(211, 211, 18);
+    padding: 10px;
+    border-color: antiquewhite;
+    color: rgb(15, 14, 14);
+    border-radius: 2px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer; 
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 27%;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .log-in{
+    padding: 5px;
+  }
+  .input-grp{
+    padding: 5px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+   
+  .input-grp input{
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #efeeee;
+    padding: 10px;
+  }
+  .log-in button{
+    background-color: rgb(74, 153, 74);
+    color: #efeeee;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+.get{
+  font-size: 20px;
+  color: #8e8a8ace;
+  margin-top: 2px;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+
+
+.modal-content-text {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+#creat-but{
+ max-width: 10%;
+}
+#as-bt{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  text-emphasis: none;
+  color: #000;
+}
+
+.contents{
+  padding-bottom: 10px;
+}
+
+#switch-button{
+  color: blue;
+  cursor: pointer;
+}
+

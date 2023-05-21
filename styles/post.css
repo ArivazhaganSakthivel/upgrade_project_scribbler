@@ -1,0 +1,221 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3{
+    font-family: 'Montez', cursive; 
+    font-size: 30px;
+    color: blue;
+    margin-top: 2px;
+    margin-bottom: -10px;
+}
+p{
+    font-family: 'Ubuntu Mono', monospace;
+}
+#post-tt{
+  font-size: 12px;
+}
+
+.sign{
+    background-color: blue;
+    padding: 10px;
+    border-color: antiquewhite;
+    color: white;
+    border-radius: 2px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 27%;
+  }
+
+.modal-content-question{
+    background-color: #fefefe;
+    margin: auto;
+    padding:0px 10px 20px 10px;
+    border: 1px solid #888;
+    width: 25%;
+    margin-top: 170px;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ .qa{
+   text-align: center;
+   font-size: 20px;
+   padding-top: 0px;
+   padding: 0px;
+   color: #423c3c;
+   
+ }
+.yn-but{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.yn-but button{
+    padding: 10px;
+    border-color: antiquewhite;
+    color: white;
+    border-radius: 2px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#yes{
+    background-color: rgb(107, 216, 107);
+}
+#no{
+    background-color: rgb(247, 45, 45);
+}
+
+
+.log-in{
+    padding: 5px;
+  }
+  .input-grp{
+    padding: 5px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+   
+  .input-grp input{
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: #efeeee;
+    padding: 10px;
+  }
+  .log-in button{
+    background-color: rgb(74, 153, 74);
+    color: #efeeee;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+.get{
+  font-size: 20px;
+  color: #8e8a8ace;
+  margin-top: 2px;
+  padding-top:20px;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+
+.cen{
+display: flex;
+flex-direction: row;
+justify-content: center;
+   }
+   a{
+    text-decoration: none;
+    text-emphasis: none;
+  }
+
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+}  
+
+.post-title{
+    text-align: center;
+    
+}
+#save-button{
+  display: none;
+}
+
+.name-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.liked-msg p{
+    color: #816c6cce;
+    font-size: 15px;
+}
+
+.comment-msg{
+    background-color:#ebebeb;
+    padding: 5px;
+    max-width: 69%;
+    margin-top: -5px;
+}
+.comment-msg p{
+background-color: white;
+padding: 8px;
+max-width: 100%;
+font-size: 15px;
+}
+button{
+    background-color: rgb(250, 80, 108);
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    box-shadow: 5px 3px 3px lightblue;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 1px;
+}
+h4{
+    font-size: 16px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#switch-button{
+  color: blue;
+  cursor: pointer;
+}

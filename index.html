@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriBBler Project</title>
+    <link rel="stylesheet" href="../upgrade_project/styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div>
+        <a href="../upgrade_project/index.html">
+        <h3>ScriBBler</h3> 
+        <p>Explore, Imagine, Create</p> 
+    </a>
+    </div>
+    <div id="sign-but">
+        <button class="sign" id="sign-up" > Sign Up </button>
+        <button class="sign" id="sign-in"> Sign In</button>
+    </div>
+     </header>
+     <div class="container">
+        <button class="post-but" id="all-post" type="button" onclick="location.href='../upgrade_project/html/postslist.html'">All Posts</button>
+        <button class="post-but" id="create-post">Create Post </button>
+     </div>
+     <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+    <span class="get">Get Started</span>
+    <span id="close1" class ='close'>&times;</span>
+    <hr>
+        <div class="log-in">
+            <form action="" id="form">
+                <div class="input-grp">
+                    <label for="">Name</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-grp">
+                    <label for="">Username</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your username" required>
+                </div>
+                <div class="input-grp">
+                    <label for="">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-grp">
+                    <label for="">Confirm Password</label>
+                    <input type="text" id="cpassword" name="cpassword" placeholder="Re-enter your password" required>
+                </div>
+                <button type="submit"> Sign Up</button>
+            </form>
+        </div>
+    </div>
+  </div>
+<!-- This is nex one -->
+</div>
+<!-- The Modal 1-->
+<div id="myModal-1" class="modal">
+
+<!-- Modal content 1 -->
+<div class="modal-content">
+<span class="get">Welcome Back!</span>
+<span id="close2" class ='close'>&times;</span>
+<hr>
+   <div class="log-in">
+       <form action="" id="form">
+           <div class="input-grp">
+               <label for="">Username</label>
+               <input type="text" id="username-1" name="username" placeholder="Enter your username" required>
+           </div>
+           <div class="input-grp">
+               <label for="">Password</label>
+               <input type="text" id="email-1" name="email" placeholder="Enter your user password" required>
+           </div>
+           <button type="submit"> Sign Up</button>
+           <div class="cen">
+            <h4>Not a Member or <span id="switch-button">Sign Up</span></h4>
+        </div>
+        </form>
+   </div>
+</div>
+</div>
+<!-- This is nex one -->
+</div>
+<!-- The Modal 1-->
+<div id="myModal-2" class="modal">
+
+<!-- Modal content 1 -->
+<div class="modal-content-text">
+<span class="get">Pen Your Post</span>
+<span id="close3" class ='close'>&times;</span>
+<hr>
+   <div class="log-in">
+       <form action="" id="form">
+           <div class="input-grp">
+               <label>Title</label>
+               <input type="text" id="username-1" name="title" placeholder="Enter your title of your post" required>
+           </div>
+           <div class="input-grp">
+            <label class="contents">Contents</label>
+            <textarea name="" id="t-area" cols="30" rows="20">Type your post on this place...</textarea>
+           </div>
+           <div id="as-bt">
+           <button type="submit" id="creat-but"> Create</button>
+        </div>
+       </form>
+   </div>
+</div>
+</div>
+
+<script src="../upgrade_project/scripts/index.js"></script>
+</body>
+</html>
