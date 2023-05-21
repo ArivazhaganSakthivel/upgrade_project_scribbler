@@ -18,6 +18,8 @@ close1.addEventListener('click', ()=>{
     myModel1.style.display = 'none';
 });
 
+let titleInnertext = document.getElementById('title-text').innerHTML;
+let paraInnertext = document.getElementById('post-tt').innerHTML;
 let updated = document.createElement('span');
 updated.innerText =`UPDATED: `;
 let updatedPara = document.createElement('p');
@@ -39,8 +41,12 @@ document.getElementById('save-button').addEventListener('click', ()=>{
     document.getElementById('post-tt').style.border ="none";
     document.getElementById('post-text').contentEditable='false';
     document.getElementById('title').contentEditable='false';
-    document.getElementById('title-text').insertBefore(updated,document.getElementById('title-text').childNodes[0]);
-    document.getElementById('post-tt').insertBefore(updatedPara,document.getElementById('post-tt').childNodes[0]);
+    if(titleInnertext !== document.getElementById('title-text').innerHTML){
+        document.getElementById('title-text').insertBefore(updated,document.getElementById('title-text').childNodes[0]);
+        }
+        if(paraInnertext !== document.getElementById('post-tt').innerHTML){
+        document.getElementById('post-tt').insertBefore(updatedPara,document.getElementById('post-tt').childNodes[0]);
+}
 });
 
 let likeCount = 0;
@@ -53,18 +59,19 @@ document.getElementById('like-button').addEventListener('click', ()=>{
     document.getElementById('like-button').innerHTML = Liked;
 });
 
-let com_box = document.createElement('p');
-let com_msg = document.getElementById('com-msg');
 let inputVal = document.getElementById('input-value');
 document.getElementById('comment-button').addEventListener('click', ()=>{
-if(inputVal.value === '' || inputVal.value ===  'Leave a comment...')
+    if(inputVal.value === '' || inputVal.value ===  'Leave a comment...')
 {
 alert('Please leave your comment on the text box!');
 }
 else{
-    com_box.innerText = inputVal.value;
-    com_msg.insertBefore(com_box,com_msg.childNodes[0]);
-}
+    console.log('working');
+    const para = document.createElement("p");
+    const node = document.createTextNode(inputVal.value);
+    para.appendChild(node);
+    document.getElementById("myDIV").insertBefore(para,document.getElementById("myDIV").childNodes[0]);
+   }
 });
 
 document.getElementById('switch-button').addEventListener('click', ()=>{
