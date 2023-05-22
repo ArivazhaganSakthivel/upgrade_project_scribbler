@@ -61,12 +61,11 @@ document.getElementById('like-button').addEventListener('click', ()=>{
 
 let inputVal = document.getElementById('input-value');
 document.getElementById('comment-button').addEventListener('click', ()=>{
-    if(inputVal.value === '' || inputVal.value ===  'Leave a comment...')
+    if(inputVal.value === '')
 {
 alert('Please leave your comment on the text box!');
 }
 else{
-    console.log('working');
     const para = document.createElement("p");
     const node = document.createTextNode(inputVal.value);
     para.appendChild(node);

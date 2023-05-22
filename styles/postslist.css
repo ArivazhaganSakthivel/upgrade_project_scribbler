@@ -88,10 +88,14 @@ a{
     color: #8e8a8ace;
     margin-top: 2px;
     padding-top: 10px;
+    font-weight: bold;
+   
 }
 .con{
     font-size: 14px;
     margin-top: 0px;
+    font-weight: 500; 
+    
 }
 .del{
     margin-top: 10px;
@@ -246,4 +250,5 @@ justify-content: center;
   color: blue;
   cursor: pointer;
 }
+
 

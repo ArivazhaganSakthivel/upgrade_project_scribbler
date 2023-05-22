@@ -169,4 +169,12 @@ a{
   color: blue;
   cursor: pointer;
 }
-
+@media (max-width:801px){
+   .sign{
+    font-size: 11px;
+    padding: 5px;
+   }
+   a{
+    font-size: 13px;
+   }
+}
